@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form id="loginForm">
+
+                <h1>Login Account</h1>
+                <div class="social-container">
+                    <a href="" id="googleBtn" class="social"><i class="fab fa-google"></i></a>
+                </div>
+                <div id="loader"></div>
+                <input type="email" id="loginEmail" name="email" placeholder="Enter your Email Address">
+                <input type="password" id="loginPassword" name="pass" placeholder="Enter your password">
+                <a id="forgotBtn" href="#">Forget Password?</a>
+                <button id="loginBtn">Login</button>
+            </form>
+        </div>
+
+        <div class="sign-in">
+            <form id="signUpForm">
+
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="" id="googleBtn" class="social"><i class="fab fa-google"></i></a>
+                </div>
+                <div id="loader"></div>
+                <input type="text" id="signName" name="txt" placeholder="Enter your name">
+                <input type="email" id="signEmail" name="email" placeholder="Enter your Email Address">
+                <input type="password" id="signPass" name="pass" placeholder="Enter your password">
+                <button id="RegBtn">Sign up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <div class="img_wrapper">
+                        <img src="assets/images/lf20_3ueg3po6.json].png" alt="">
+                    </div>
+                    <button id="signIn">Sign up</button>
+                </div>
+
+                <div class="overlay-right">
+                    <div class="img_wrapper">
+                        <img src="assets/images/lf20_3ueg3po6.json].png" alt="">
+                    </div>
+                    <button id="signUp">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="firebase.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

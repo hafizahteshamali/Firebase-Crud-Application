@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar-text {
+    padding-top: .5rem;
+    padding-bottom: 0;
+    color: var(--bs-navbar-color);
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: #000 !important;
+    text-decoration: none;
+}
+body{
+    background: #f6f5f7;
+}
+
+.header{
+    background-color: #cccac5;
+}
+.navbar-brand{
+    color: green !important;
+    font-weight: 500;
+}
+.navbar-nav .nav-link{
+    color: green !important;
+    font-weight: 500;
+}    
+#logoutBtn a{
+    color: #000 !important;
+}
+span.navbar-text ul {
+    margin-bottom: 0;
+    display: flex;
+    gap: 10px;
+}
+#addUser{
+    border: 1px solid ;
+}
+.Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+}
+.Btn span{
+    color: green !important;
+    font-weight: 500;
+}
+.Btn i{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: #f6f5f7;
+    border: 1px solid green;
+    border-radius: 100%;
+    padding: 2px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Btn:hover>i{
+    background-color: #f6f5f7;
+    color: #000;
+}
+.logUl a{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px 30px !important;
+    display: inline-block;
+    color: green !important;
+    font-weight: 500;
+}
+.logUl a:hover{
+    background-color: green;
+    color: #fff !important;
+}
+.logUl li ul{
+    background: none;
+    border: none;
+}
+.logUl #logoutBtn a{
+    color: green !important;
+}
+.logUl #logoutBtn a:hover{
+    background-color: green;
+    color: #fff !important;
+}
+
+
+.modal-title{
+    font-size: 800 !important;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form span{
+    font-size: 18px;
+    font-weight: 600;
+}
+form input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #776d6d;
+}
+form button{
+    width: 40%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.display-Data{
+    width: max-content;
+    margin-top: 100px;
+    margin: 100px auto;
+}
+.box table{
+    width: 100%;
+    display: none;
+}
+.box table tr, .box table tr th, .box table tr td{
+    border: 2px solid #fff;
+    padding: 10px;
+    background: #a19b9b;
+    color: #fff;
+}
+table tr td:last-child{
+    text-align: center;
+}
+table tr td button{
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid green;
+    outline: none;
+    border-radius: 8px;
+    margin: 0px 5px;
+    transition: 300ms ease-in-out;
+}
+table tr td button:hover{
+    background-color: green;
+    color: #fff;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    --b: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #514b82;
+    -webkit-mask: repeating-conic-gradient(#0000 0deg,#000 1deg 70deg,#0000 71deg 90deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: l5 1s infinite;
+  }
+  @keyframes l5 {to{transform: rotate(.5turn)}}
+
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
